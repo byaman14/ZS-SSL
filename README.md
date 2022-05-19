@@ -24,7 +24,11 @@ conda env create -f environment.yml
 We have used the [fastMRI](https://fastmri.med.nyu.edu/) dataset in our experiments.
 
 ## How to use
-SSDU training can be performed by running `zs_ssl_train.py` file. Prior to running training file, hyperparameters such as number of unrolled blocks, split ratio for validation,training and loss masks can be adjusted from `parser_ops.py`. If ZS-SSL will be combined with TL, user should enable TL option and provide TL path. In `parser_ops.py`, we have also defined a parameter (`--stop_training`) to automatically stop the training process. The `--stop_training` parameter denotes the number of consecutive epochs without achieving a lower validation loss (to disable early automated stopping, fix `--stop_training` to  the number of epochs). 
+SSDU training can be performed by running `zs_ssl_train.py` file. Prior to running training file, hyperparameters such as number of unrolled blocks, split ratio for validation,training and loss masks can be adjusted from `parser_ops.py`.
+
+If ZS-SSL will be combined with TL, user should enable TL option and provide TL path to `parser_ops.py`. Note that, for transfer learning, pretrained model and ZS-SSL should have the same network architecture. We have provided a pretrained supervised model compatible with ZS-SSL architecture in `pretrained_models` folder. Pretrained self-supervised models can also be used with ZS-SSL.   
+
+In `parser_ops.py`, we have also defined a parameter (`--stop_training`) to automatically stop the training process. The `--stop_training` parameter denotes the number of consecutive epochs without achieving a lower validation loss (to disable early automated stopping, fix `--stop_training` to  the number of epochs). 
 
 `zs_ssl_train.py`  file saves the model corresponding to lowest validation error and saves it to the directory defined by user. Testing can be performed by running `zs_ssl_test.ipynb` file. 
 
