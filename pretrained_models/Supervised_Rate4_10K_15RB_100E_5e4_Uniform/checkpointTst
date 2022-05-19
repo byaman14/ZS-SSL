@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/daedalus2-data2/icarus/Burhan/ISBI_2020/savedModels/Supervised_Coronal_PD_4R_10K_15RB_100E_1BS_5e4_Uniform_1Reps_Rate4_KspaceLoss/modelTst"
+all_model_checkpoint_paths: "/home/daedalus2-data2/icarus/Burhan/ISBI_2020/savedModels/Supervised_Coronal_PD_4R_10K_15RB_100E_1BS_5e4_Uniform_1Reps_Rate4_KspaceLoss/modelTst"
