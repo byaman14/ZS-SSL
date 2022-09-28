@@ -37,7 +37,7 @@ If ZS-SSL will be combined with TL, user should enable TL option and provide TL 
 In `parser_ops.py`, we have also defined a parameter (`--stop_training`) to automatically stop the training process. The `--stop_training` parameter denotes the number of consecutive epochs without achieving a lower validation loss (to disable early automated stopping, fix `--stop_training` to  the number of epochs). 
 
 ## Citation
-If you find the paper useful in your research, please cite
+If you find the codes useful in your research, please cite
 ```
 @inproceedings{
 yaman2022zeroshot,
