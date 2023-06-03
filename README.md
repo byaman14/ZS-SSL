@@ -1,7 +1,7 @@
 # ZS-SSL: Zero-Shot Self-Supervised Learning
-:triangular_flag_on_post:**Tensorflow** This is official tensorflow implementation of ZS-SSL in the following paper: [Zero-Shot Self-Supervised Learning for MRI Reconstruction](https://openreview.net/forum?id=085y6YPaYjP).
+:triangular_flag_on_post:**Tensorflow**: This is official tensorflow implementation of ZS-SSL in the following paper: [Zero-Shot Self-Supervised Learning for MRI Reconstruction](https://openreview.net/forum?id=085y6YPaYjP).
 
-:triangular_flag_on_post:**PyTorch** For  pytorch implementation please visit ([zs-ssl-pytorch-implementation](https://github.com/byaman14/ZS-SSL-PyTorch)). 
+:triangular_flag_on_post:**PyTorch**: For  pytorch implementation please visit ([zs-ssl-pytorch-implementation](https://github.com/byaman14/ZS-SSL-PyTorch)). 
 
 :triangular_flag_on_post: If you find our work is helpful for you, please star this repo and [cite](#citelink) our paper .
 
