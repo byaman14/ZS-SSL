@@ -1,4 +1,11 @@
 # ZS-SSL: Zero-Shot Self-Supervised Learning
+:triangular_flag_on_post:**Tensorflow** This is official tensorflow implementation of ZS-SSL in the following paper: [Zero-Shot Self-Supervised Learning for MRI Reconstruction](https://openreview.net/forum?id=085y6YPaYjP).
+
+:triangular_flag_on_post:**PyTorch** For  pytorch implementation please visit ([zs-ssl-pytorch-implementation](https://github.com/byaman14/ZS-SSL-PyTorch)). 
+
+:triangular_flag_on_post: If you find our work is helpful for you, please star this repo and [cite](#citelink) our paper .
+
+## ZS-SSL Overview
 ZS-SSL enables physics-guided deep learning MRI reconstruction using only a single slice/sample ([paper](https://openreview.net/forum?id=085y6YPaYjP)).
 Succintly, ZS-SSL  partitions the available measurements from a single scan into three disjoint sets. Two of these sets are used to enforce data consistency and define loss during training for self-supervision, while the last set serves to self-validate, establishing an early stopping criterion. In the presence of models pre-trained on a database with different image characteristics, ZS-SSL can be combined with transfer learning (TL) for faster convergence time and reduced computational complexity.
 
@@ -36,7 +43,7 @@ If ZS-SSL will be combined with TL, user should enable TL option and provide TL 
 #### Early Automated Stopping
 In `parser_ops.py`, we have also defined a parameter (`--stop_training`) to automatically stop the training process. The `--stop_training` parameter denotes the number of consecutive epochs without achieving a lower validation loss (to disable early automated stopping, fix `--stop_training` to  the number of epochs). 
 
-## Citation
+## <span id="citelink">Citation</span>
 If you find the codes useful in your research, please cite
 ```
 @inproceedings{
